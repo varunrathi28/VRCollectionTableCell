@@ -76,4 +76,25 @@
     
 }
 
+#pragma MARK - CollectionView Cell Methods
+
+-(NSInteger)collectionView:(VRCustomCollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    
+    NSArray * arrSectionColors = _arrColors[collectionView.index];
+    return arrSectionColors.count;
+    
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CollectionViewCell" forIndexPath:indexPath];
+    
+    NSArray * sectionColor = _arrColors[indexPath.section];
+    cell.backgroundColor = sectionColor[indexPath.item];
+    
+    return cell;
+    
+}
+
 @end

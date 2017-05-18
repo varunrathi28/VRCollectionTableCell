@@ -32,6 +32,14 @@
     return self;
 }
 
+-(void)setDatasourceWithObject:(id<UICollectionViewDelegate,UICollectionViewDataSource>)dataDelegate withIndex:(NSInteger)index
+{
+    self.collectionView.delegate = dataDelegate;
+    self.collectionView.dataSource = dataDelegate;
+    [self.collectionView setContentOffset:self.collectionView.contentOffset animated:NO];
+    self.collectionView.index  = index;
+    [self.collectionView reloadData];
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
