@@ -38,6 +38,13 @@
     // Initialization code
 }
 
+-(void)layoutSubviews
+{
+    [super layoutSubviews ];
+    self.collectionView.frame = self.contentView.bounds;
+
+}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

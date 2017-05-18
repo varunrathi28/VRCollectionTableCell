@@ -10,7 +10,10 @@
 
 @interface ViewController : UIViewController<UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDataSource>
 
-@property (nonatomic,weak) IBOutlet UITableView *  tblView;
+@property (nonatomic,strong) NSArray * arrColors;
 
+@property (nonatomic,strong) NSMutableDictionary * offsetDic;
+
+@property (nonatomic,weak) IBOutlet UITableView * tblView;
 @end
 
