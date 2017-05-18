@@ -13,6 +13,8 @@
 		37EB9ED81ECCA39500EB1872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EB9ED61ECCA39500EB1872 /* Main.storyboard */; };
 		37EB9EDA1ECCA39500EB1872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37EB9ED91ECCA39500EB1872 /* Assets.xcassets */; };
 		37EB9EDD1ECCA39500EB1872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EB9EDB1ECCA39500EB1872 /* LaunchScreen.storyboard */; };
+		37EB9F101ECDAE8E00EB1872 /* VRCollectionTblCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EB9F0F1ECDAE8E00EB1872 /* VRCollectionTblCell.m */; };
+		37EB9F131ECDAEB100EB1872 /* VRCustomCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EB9F121ECDAEB100EB1872 /* VRCustomCollectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		37EB9ED91ECCA39500EB1872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37EB9EDC1ECCA39500EB1872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37EB9EDE1ECCA39500EB1872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37EB9F0E1ECDAE8E00EB1872 /* VRCollectionTblCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCollectionTblCell.h; sourceTree = "<group>"; };
+		37EB9F0F1ECDAE8E00EB1872 /* VRCollectionTblCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCollectionTblCell.m; sourceTree = "<group>"; };
+		37EB9F111ECDAEB100EB1872 /* VRCustomCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCustomCollectionView.h; sourceTree = "<group>"; };
+		37EB9F121ECDAEB100EB1872 /* VRCustomCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCustomCollectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				37EB9EDB1ECCA39500EB1872 /* LaunchScreen.storyboard */,
 				37EB9EDE1ECCA39500EB1872 /* Info.plist */,
 				37EB9ECD1ECCA39500EB1872 /* Supporting Files */,
+				37EB9F0E1ECDAE8E00EB1872 /* VRCollectionTblCell.h */,
+				37EB9F0F1ECDAE8E00EB1872 /* VRCollectionTblCell.m */,
+				37EB9F111ECDAEB100EB1872 /* VRCustomCollectionView.h */,
+				37EB9F121ECDAEB100EB1872 /* VRCustomCollectionView.m */,
 			);
 			path = VRCollectionTableCell;
 			sourceTree = "<group>";
@@ -152,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EB9ED51ECCA39500EB1872 /* ViewController.m in Sources */,
+				37EB9F131ECDAEB100EB1872 /* VRCustomCollectionView.m in Sources */,
 				37EB9ED21ECCA39500EB1872 /* AppDelegate.m in Sources */,
+				37EB9F101ECDAE8E00EB1872 /* VRCollectionTblCell.m in Sources */,
 				37EB9ECF1ECCA39500EB1872 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
