@@ -58,4 +58,22 @@
 }
 
 
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    VRCollectionTblCell * customCell = (VRCollectionTblCell *)cell;
+    [customCell setDatasourceWithObject:self withIndex:indexPath.row];
+    NSInteger index = customCell.collectionView.index;
+    CGFloat horizontalOffset = [self.offsetDic[[@(index) stringValue]] floatValue];
+    [customCell.collectionView setContentOffset:CGPointMake(horizontalOffset, 0)];
+}
+
+-(void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    VRCollectionTblCell * customCell = (VRCollectionTblCell *)cell;
+    CGFloat hOffset = customCell.collectionView.contentOffset.x;
+    NSInteger index = customCell.collectionView.index;
+    self.offsetDic[[@(index) stringValue]] = @(hOffset);
+    
+}
+
 @end

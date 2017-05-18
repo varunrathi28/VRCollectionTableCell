@@ -12,4 +12,6 @@
 @interface VRCollectionTblCell : UITableViewCell
 
 @property (nonatomic, strong) VRCustomCollectionView * collectionView;
+
+-(void)setDatasourceWithObject:(id<UICollectionViewDelegate,UICollectionViewDataSource>)dataDelegate withIndex:(NSInteger)index;
 @end
